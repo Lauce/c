@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1460065814 source:c:\users\win7\desktop\ejercicios en c\clasedeapoyo\previos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1460067404 source:c:\users\win7\desktop\ejercicios en c\clasedeapoyo\previos\funciones.c
+
+1460067013 c:\users\win7\desktop\ejercicios en c\clasedeapoyo\previos\funciones.h
+
