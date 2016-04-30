@@ -1,62 +1,21 @@
 
-#ifndef FUNCIONES_H_INCLUDED
-#define FUNCIONES_H_INCLUDED
+
+typedef struct
+{
+    char nombre[50];
+    int edad;
+    int dni;
+    int estado;
+
+} ePersona;
 
 
-
-#endif // FUNCIONES_H_INCLUDED
-
-
-
-/** \brief suma los dos numeros ingresados
-* \param primer numero a sumar
-* \param segundo numero a sumar
-* \return devuelve el resultado de la suma.
-*/
-float sumarNumeros(float, float);
-
-
-/** \brief resta los dos numeros ingresados
-* \param primer numero a restar
-* \param segundo numero a restar
-* \return devuelve el resultado de la resta.
-*/
-
-float restarNumeros(float, float);
-
-
-
-/** \brief divide los dos numeros ingresados
-* \param primer numero a dividir
-* \param segundo numero a dividir
-* \return devuelve el resultado de la division.
-*/
-
-float dividirNumeros(float, float);
-
-/** \brief multiplica los dos numeros ingresados
-* \param primer numero a multiplicar
-* \param segundo numero a multiplicar
-* \return devuelve el producto de la multiplicacion.
-*/
-
-
-float multiplicarNumeros(float, float);
-
-/** \brief obtiene el factorial del primer numero ingresado
-* \param  numero a obtener el factorial
-* \return devuelve el factorial del numero ingresado.
-*/
-
-
-int factorial(int);
-
-
-/** \brief calcula todas las operaciones (suma, resta, division, multiplicacion y factorial los numeros ingresados
-* \param primer numero a operar - En el caso del factorial, este el el parametro que toma.
-* \param segundo numero a operar
-* \return devuelve los resultados de cada operacion.
-*/
-
-
-float calcularTodo (float, float);
+void inicializarVec(ePersona vector[], int length);
+int revisarEstado(ePersona vector[],int length, int *indice);
+void cargarAlta(ePersona* vector, int length, int indiceLibre);
+int revisarDni(ePersona vector[],int length, int parametro, int *indice);
+void borrarDatos(ePersona[],int);
+void ordenarNombre(ePersona[],int);
+int esUnNumero(char str[]);
+int soloLetras (char string[]);
+void graficoEdad(ePersona vector[], int length);
